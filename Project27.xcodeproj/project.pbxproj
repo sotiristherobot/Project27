@@ -13,6 +13,7 @@
 		1E1424B71C0767520024E20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1424B51C0767520024E20C /* Main.storyboard */; };
 		1E1424B91C0767520024E20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1424B81C0767520024E20C /* Assets.xcassets */; };
 		1E1424BC1C0767520024E20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1424BA1C0767520024E20C /* LaunchScreen.storyboard */; };
+		1E1424C51C07681F0024E20C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1424C41C07681F0024E20C /* MainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1E1424B81C0767520024E20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E1424BB1C0767520024E20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1424BD1C0767520024E20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E1424C31C07681F0024E20C /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		1E1424C41C07681F0024E20C /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				1E1424BA1C0767520024E20C /* LaunchScreen.storyboard */,
 				1E1424BD1C0767520024E20C /* Info.plist */,
 				1E1424AC1C0767520024E20C /* Supporting Files */,
+				1E1424C31C07681F0024E20C /* MainView.h */,
+				1E1424C41C07681F0024E20C /* MainView.m */,
 			);
 			path = Project27;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E1424B41C0767520024E20C /* ViewController.m in Sources */,
+				1E1424C51C07681F0024E20C /* MainView.m in Sources */,
 				1E1424B11C0767520024E20C /* AppDelegate.m in Sources */,
 				1E1424AE1C0767520024E20C /* main.m in Sources */,
 			);

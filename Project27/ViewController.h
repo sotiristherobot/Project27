@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <Touches>
 
 
+- (void) mainViewIsTouched;
+
+
+@property (strong, nonatomic) IBOutlet MainView *mainView;
 @end
 
