@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -23,6 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -31,8 +33,30 @@
 //delegate method
 - (void) mainViewIsTouched{
     
-    
     NSLog(@"Delegate method");
+    
+    //implement popover
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: nil
+                                                                              message: nil
+                                                                       preferredStyle: UIAlertControllerStyleActionSheet];
+    
+    [alertController addAction: [UIAlertAction actionWithTitle: @"Circle" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    
+        NSLog(@"Circle");
+    
+    }]];
+    
+    [alertController addAction: [UIAlertAction actionWithTitle: @"Square" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+        NSLog(@"Square");
+        
+    }]];
+    
+    alertController.modalPresentationStyle = UIModalPresentationPopover;
+    
+  
+    [self presentViewController: alertController animated: YES completion: nil];
+    
     
 }
 
