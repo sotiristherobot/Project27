@@ -11,7 +11,7 @@
 
 @interface ViewController : UIViewController <Touches>
 
-- (void) mainViewIsTouched;
+- (void) mainViewIsTouched:(CGPoint)location;
 
 
 @property (strong, nonatomic) IBOutlet MainView *mainView;

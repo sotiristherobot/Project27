@@ -14,6 +14,7 @@
 		1E1424B91C0767520024E20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1424B81C0767520024E20C /* Assets.xcassets */; };
 		1E1424BC1C0767520024E20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1424BA1C0767520024E20C /* LaunchScreen.storyboard */; };
 		1E1424C51C07681F0024E20C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1424C41C07681F0024E20C /* MainView.m */; };
+		1EA5FFB11C0904510099CEBA /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5FFAF1C0904510099CEBA /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		1E1424BD1C0767520024E20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E1424C31C07681F0024E20C /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		1E1424C41C07681F0024E20C /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		1EA5FFAF1C0904510099CEBA /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = ../../Demo/Demo/Circle.m; sourceTree = "<group>"; };
+		1EA5FFB01C0904510099CEBA /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = ../../Demo/Demo/Circle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				1E1424AC1C0767520024E20C /* Supporting Files */,
 				1E1424C31C07681F0024E20C /* MainView.h */,
 				1E1424C41C07681F0024E20C /* MainView.m */,
+				1EA5FFB01C0904510099CEBA /* Circle.h */,
+				1EA5FFAF1C0904510099CEBA /* Circle.m */,
 			);
 			path = Project27;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			files = (
 				1E1424B41C0767520024E20C /* ViewController.m in Sources */,
 				1E1424C51C07681F0024E20C /* MainView.m in Sources */,
+				1EA5FFB11C0904510099CEBA /* Circle.m in Sources */,
 				1E1424B11C0767520024E20C /* AppDelegate.m in Sources */,
 				1E1424AE1C0767520024E20C /* main.m in Sources */,
 			);
@@ -304,6 +310,7 @@
 				1E1424C21C0767520024E20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

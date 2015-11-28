@@ -31,9 +31,9 @@
 }
 
 //delegate method
-- (void) mainViewIsTouched{
+- (void) mainViewIsTouched:(CGPoint)location{
     
-    NSLog(@"Delegate method");
+   // NSLog(@"Delegate method");
     
     //implement popover
     UIAlertController * alertController = [UIAlertController alertControllerWithTitle: nil
@@ -42,13 +42,27 @@
     
     [alertController addAction: [UIAlertAction actionWithTitle: @"Circle" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
     
-        NSLog(@"Circle");
+        //NSLog(@"Circle");
+        
+        //NSLog(@"%f" , location.x);
+        
+        //[self.mainView strokeCircle:location];
+        
+        self.mainView.shapeToDraw = @"Circle";
+        self.mainView.location = location;
+        
+        
+        [self.mainView setNeedsDisplay];
+        
+      
     
     }]];
     
     [alertController addAction: [UIAlertAction actionWithTitle: @"Square" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
         NSLog(@"Square");
+        
+        //[self.mainView test];
         
     }]];
     
