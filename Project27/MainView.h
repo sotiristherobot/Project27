@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Circle.h"
+#import "Square.h"
 
 @protocol Touches <NSObject>
 
@@ -19,17 +20,22 @@
 
 - (void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
 
-- (void) strokeCircle;
+- (void) strokeCircle:(Circle *)circle;
 
-- (void) strokeSquare;
+- (void) createCircle:(CGPoint) location;
+
+- (void) strokeSquare:(Square *)square;
+
+- (void) createSquare:(CGPoint) location;
 
 
 //delegate to view controller
 @property(nonatomic,weak) id <Touches> delegate;
 @property(nonatomic,weak) NSString *shapeToDraw;
 
-@property(nonatomic,strong) Circle *circle;
+//@property(nonatomic,strong) Circle *circle;
 @property(nonatomic,strong) NSMutableArray *finishedCircles;
-@property(nonatomic) CGPoint location;
+@property(nonatomic,strong) NSMutableArray *finishedSquares;
+//@property(nonatomic) CGPoint location;
 
 @end

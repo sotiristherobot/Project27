@@ -14,6 +14,7 @@
 		1E1424B91C0767520024E20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1424B81C0767520024E20C /* Assets.xcassets */; };
 		1E1424BC1C0767520024E20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1424BA1C0767520024E20C /* LaunchScreen.storyboard */; };
 		1E1424C51C07681F0024E20C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1424C41C07681F0024E20C /* MainView.m */; };
+		1E7B7BF41C0B40A5008A7BEF /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B7BF31C0B40A5008A7BEF /* Square.m */; };
 		1EA5FFB11C0904510099CEBA /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5FFAF1C0904510099CEBA /* Circle.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		1E1424BD1C0767520024E20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E1424C31C07681F0024E20C /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		1E1424C41C07681F0024E20C /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		1E7B7BF21C0B40A5008A7BEF /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Square.h; path = Project27/Square.h; sourceTree = "<group>"; };
+		1E7B7BF31C0B40A5008A7BEF /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Square.m; path = Project27/Square.m; sourceTree = "<group>"; };
 		1EA5FFAF1C0904510099CEBA /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = ../../Demo/Demo/Circle.m; sourceTree = "<group>"; };
 		1EA5FFB01C0904510099CEBA /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = ../../Demo/Demo/Circle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				1E1424AB1C0767520024E20C /* Project27 */,
+				1E7B7BF21C0B40A5008A7BEF /* Square.h */,
+				1E7B7BF31C0B40A5008A7BEF /* Square.m */,
 				1E1424AA1C0767520024E20C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7B7BF41C0B40A5008A7BEF /* Square.m in Sources */,
 				1E1424B41C0767520024E20C /* ViewController.m in Sources */,
 				1E1424C51C07681F0024E20C /* MainView.m in Sources */,
 				1EA5FFB11C0904510099CEBA /* Circle.m in Sources */,

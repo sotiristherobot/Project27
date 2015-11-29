@@ -24,6 +24,7 @@
     
     NSLog(@"Init in progress");
     self.finishedCircles = [[NSMutableArray alloc]init];
+    self.finishedSquares = [[NSMutableArray alloc]init];
     
     
 }
@@ -31,18 +32,24 @@
 - (void) drawRect:(CGRect)rect {
 
     
-    if ( [self.shapeToDraw isEqualToString:@"Circle"]){
         
        // [self strokeCircle];
         
         for (Circle *c in self.finishedCircles){
             
+            //self.circle = c;
+            //[self strokeCircle];
+            [self strokeCircle:c];
         
-            self.circle = c;
-            [self strokeCircle];
         }
         
-    }
+        
+        for (Square *s in self.finishedSquares){
+            
+            [self strokeSquare:s];
+        }
+        
+    
     
 }
 
@@ -56,12 +63,11 @@
     
     [self.delegate mainViewIsTouched:location];
     
-    self.circle = [[Circle alloc]init];
-    //self.circle.location = self.location;
-    self.circle.location = location;
-    [self.finishedCircles addObject:self.circle];
+    
+
 }
     //NSLog(@"%f", location.x);
+
 
 - (void) touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
@@ -69,9 +75,30 @@
     
 }
 
+- (void) createCircle:(CGPoint) location{
+    
+    Circle *circle = [[Circle alloc]init];
+    circle.location = location;
+    //self.circle.location = self.location;
+    
+    //self.circle.location = location;
+    [self.finishedCircles addObject:circle];
+    
+    
+    
+}
 
+- (void) createSquare:(CGPoint) location{
+    
+    Square *square = [[Square alloc]init];
+    square.location = location;
+    [self.finishedSquares addObject:square];
+    
+    
+    
+}
 
--(void) strokeCircle{
+-(void) strokeCircle:(Circle *)circle{
     
     
     //NSLog(@"%f", location.x);
@@ -85,7 +112,7 @@
 
     UIBezierPath *path = [[UIBezierPath alloc]init];
     
-    [path addArcWithCenter:self.circle.location radius:20 startAngle:0.0 endAngle:M_PI * 2.0 clockwise:YES];
+    [path addArcWithCenter:circle.location radius:20 startAngle:0.0 endAngle:M_PI * 2.0 clockwise:YES];
     
     [path stroke];
     
@@ -94,10 +121,15 @@
     
 }
 
-- (void)strokeSquare{
+- (void)strokeSquare:(Square *)square{
     
+    CGRect rectangle = CGRectMake(square.location.x, square.location.y, 10, 10);
     
-    NSLog(@"sqqq");
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:rectangle];
+    
+    [path stroke];
+    
+  
 }
 
 @end

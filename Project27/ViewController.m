@@ -49,8 +49,9 @@
         //[self.mainView strokeCircle:location];
         
         self.mainView.shapeToDraw = @"Circle";
-        self.mainView.location = location;
+        //self.mainView.location = location;
         
+        [self.mainView createCircle:location];
         
         [self.mainView setNeedsDisplay];
         
@@ -60,7 +61,14 @@
     
     [alertController addAction: [UIAlertAction actionWithTitle: @"Square" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
-        NSLog(@"Square");
+        //NSLog(@"Square");
+        
+        //self.mainView.shapeToDraw = @"Square";
+        //self.mainView.location = location;
+        
+        [self.mainView createSquare:location];
+        
+        [self.mainView setNeedsDisplay];
         
         //[self.mainView test];
         
